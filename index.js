@@ -11,6 +11,8 @@ const db = mysql.createPool({
     database: 'demo3'
 });
 
+//test commit par commend
+
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({extend: true}));
