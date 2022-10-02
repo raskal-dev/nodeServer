@@ -26,7 +26,7 @@ app.get('/api/get', (req, res) => {
 app.post('/api/insert', (req, res) => {
     const nom = req.body.nom;
     const tel = req.body.tel;
-    const sqlInsert = "INSERT INTO client(nom, tel) VALUES(?,?)"
+    const sqlInsert = "INSERT INTO client (nom, tel) VALUES(?,?)"
     db.query(sqlInsert, [nom, tel], (err, result) => {
         console.log(result);
     });
